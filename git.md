@@ -15,7 +15,7 @@ Git Guidelines
 - You should not start commits with "Implement + [verb]", just "[verb] ..." is enough.
 - You should not put everything in a huge commit.
 - When squashing commits do:
-    > git checkout -b temp
-    > git checkout currentBranch
-    > git rebase -i ... [--autosquash]
+    > git checkout -b temp <br/>
+    > git checkout currentBranch <br/>
+    > git rebase -i ... [--autosquash] <br/>
     > git diff temp
