@@ -14,3 +14,8 @@ Git Guidelines
 - Use `git commit --fixup [commit hash]` when fixing something related to a previous commit.
 - You should not start commits with "Implement + [verb]", just "[verb] ..." is enough.
 - You should not put everything in a huge commit.
+- When squashing commits do:
+    > git checkout -b temp
+    > git checkout currentBranch
+    > git rebase -i ... [--autosquash]
+    > git diff temp
